@@ -29,7 +29,7 @@ class Magentotutorial_Weblog_IndexController extends Mage_Core_Controller_Front_
     {
         $posts = Mage::getModel('weblog/blogpost')->getCollection();
         foreach ($posts as $id => $post) {
-            echo '<h3>$id - '.$post['title'].'</h3>';
+            echo "<h3>$id - ".$post['title'].'</h3>';
             echo nl2br('<p>'.$post['post'].'</p>');
         }
     }
